@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Wada Pola</string>
+    <string name="name">WADA POLA</string>
+    <string name="splash_text1">Powered by</string>
+    <string name="splash_text2">DTecKnow</string>
+    <string name="signIn_t1">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signup">Sign Up</string>
+    <string name="signup1">Sign Up 1/2</string>
+    <string name="signup2">Sign Up 2/2</string>
+    <string name="fName">First Name</string>
+    <string name="lName">Last Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="next">Next</string>
+    <string name="conPassword">Confirm Password</string>
+    <string name="street">Street</string>
+    <string name="l1">Line 1</string>
+    <string name="l2">Line 2</string>
+    <string name="city">City</string>
+    <string name="province">Province</string>
+    <string name="zip">Zip Code</string>
+    <string name="ver">Verification</string>
+
+    <!--    menue-->
+    <string name="dash">Dashboard</string>
+    <string name="book">My Booking</string>
+    <string name="home">Home</string>
+
+    <!--    menue-->
+
+    <!--    cus_home-->
+    <string name="welNote">Welcome back</string>
+    <string name="sell">Workers</string>
+    <string name="service">Services</string>
+    <string name="intro">In Sri Lanka, finding reliable local service providers for tasks like
+        plumbing, electrical work, carpentry, masonry, and cleaning can be challenging. Wada Pola is
+        here to change that!\nWe’ve created an easy-to-use M-Commerce platform that connects skilled
+        workers with customers looking for quality services.
+    </string>
+    <!--    cus_home-->
+
+    <!--    Dash-->
+    <string name="search1">Search</string>
+
+    <!--    Dash-->
+
+    <!--    Seller single view-->
+    <string name="sellerSin">Seller Single View</string>
+    <string name="prof">My Works</string>
+    <string name="me">About me</string>
+    <string name="rateSingle">Worked Hours</string>
+    <string name="book1">Book Now</string>
+    <string name="pay1">Pay Now</string>
+
+    <!--    Seller single view-->
+
+    <!--    SensorVerification-->
+    <string name="hiNote">Hi</string>
+    <string name="hiNote1">Please Verify are you human,Hold the device close to your face for a moment.</string>
+    <string name="hiNote3">2 Verification</string>
+    <!--    SensorVerification-->
+
+    <!--    Deactivate Activity -->
+    <string name="deactivateText1">You are not active yet.It may take a little longer. So please try logging in again in a few moments.</string>
+    <!--    Deactivate Activity -->
+
+    <!--    customer navigates-->
+    <string name="navT5">My Payments</string>
+    <!--    customer navigates-->
+
+    <!--    Message-->
+    <string name="messageInput">Message</string>
+    <string name="send">Send Message</string>
+    <!--    Message-->
+
+    <!--    bookingItem-->
+    <string name="bookingbtncancel">Cancel</string>
+    <string name="bookingbtnAccept">Accept</string>
+    <!--    bookingItem-->
+
+    <!--    my Location custom-->
+    <string name="locationBtn1">Update My Current Location</string>
+    <string name="locationBtn2">Update My Custom Location</string>
+    <!--    my Location custom-->
+
+    <!--    My profile-->
+    <string name="profileT1">My Profile</string>
+    <string name="profileT2">My Profile</string>
+    <string name="price">Price</string>
+    <string name="working_status">Working Status</string>
+    <string name="updatebtn1">Update Profile</string>
+    <!--    My profile-->
+
+    <!--    Worker signUp-->
+    <string name="workerRegNote1">Worker Sign Up 1/2</string>
+    <string name="workerRegNote2">Customer Registration</string>
+    <string name="workerRegNote3">About</string>
+    <string name="workerRegNote4">Fee per Hour</string>
+    <string name="workerRegNote5">Worker SignIn?</string>
+    <!--    Worker signUp-->
+
+    <!--Worker SignIn-->
+    <string name="workerSignInt1">Worker Sign In</string>
+    <string name="workerSignInt2">Customer Sign In</string>
+    <!--Worker SignIn-->
+
+    <!--    Worker home-->
+    <string name="workerHomeMenuT1">My Home</string>
+    <string name="workerHomeMenuT2">Bookings</string>
+    <string name="workerHomeMenuT3">Location</string>
+    <string name="workerHomeMenuT4">My Profile</string>
+    <string name="workerHomeMenuT5">My WorkProof</string>
+    <string name="workerHomeMenuT6">My Address</string>
+    <!--    Worker home-->
+
+    <!--    payment history-->
+
+    <string name="workerPayHistoryt1">My Service History</string>
+
+    <!--    payment history-->
+
+    <!--    Log out-->
+    <string name="logout">Log Out</string>
+    <string name="con">My Contact</string>
+    <!--    Log out-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

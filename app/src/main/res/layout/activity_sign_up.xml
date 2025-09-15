@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".customer.SignUpActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/barlow_condensed_black"
+        android:text="@string/name"
+        android:textColor="@color/c1"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/signup1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/round_background_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/logoImageView1"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_splash"
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrainLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/editTextTextEmailSignup1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/mail"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/email"
+                android:inputType="text|textEmailAddress"
+                android:outlineAmbientShadowColor="@color/c1"
+                android:outlineSpotShadowColor="@color/c1"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/c1"
+                android:textColorHint="@color/c1"
+                android:textColorLink="@color/c1"
+                android:textCursorDrawable="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextTextMobileSignup1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableTint="@color/c1"
+                android:drawableStart="@drawable/contact"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/mobile"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailSignup1" />
+
+            <EditText
+                android:id="@+id/editTextTextPassword1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/padlock"
+                android:drawableTint="@color/c1"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/password"
+                android:inputType="text|textPassword"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMobileSignup1" />
+
+            <EditText
+                android:id="@+id/editTextTextFname1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/id_card"
+                android:drawableTint="@color/c1"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/fName"
+                android:inputType="text|textCapSentences"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextConfPassword1" />
+
+            <EditText
+                android:id="@+id/editTextTextLname1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:drawableTint="@color/c1"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/id_card"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/lName"
+                android:inputType="text|textCapSentences"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextFname1" />
+
+            <EditText
+                android:id="@+id/editTextTextConfPassword1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableTint="@color/c1"
+                android:drawableStart="@drawable/auction"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/conPassword"
+                android:inputType="text|textPassword"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1" />
+
+            <Button
+                android:id="@+id/buttonSignUp1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="@color/c1"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/signup"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextLname1" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/c4"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/signIn_t1"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/buttonSignUp1"
+                app:layout_constraintStart_toStartOf="@+id/buttonSignUp1"
+                app:layout_constraintTop_toBottomOf="@+id/buttonSignUp1" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Seller Registation ?"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:autoLink="all"
+                android:fontFamily="@font/barlow_condensed_black"
+                android:text="Seller Registation"
+                android:textColor="@color/c3"
+                app:layout_constraintBottom_toBottomOf="@+id/textView6"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toTopOf="@+id/textView6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

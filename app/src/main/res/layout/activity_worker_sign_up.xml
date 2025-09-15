@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".worker.WorkerSignUpActivity">
+
+    <TextView
+        android:id="@+id/textViewWorker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/barlow_condensed_black"
+        android:text="@string/name"
+        android:textColor="@color/c1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWorker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/workerRegNote1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewWorker1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWorker1" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutWorkerReg1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/round_background_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWorker2">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/logoImageViewWorkerReg1"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_splash"
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrolerViewWorReg1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutWorkerReg1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextTextEmailWorkerReg1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/mail"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/email"
+                android:inputType="text|textEmailAddress"
+                android:outlineAmbientShadowColor="@color/c1"
+                android:outlineSpotShadowColor="@color/c1"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/c1"
+                android:textColorHint="@color/c1"
+                android:textColorLink="@color/c1"
+                android:textCursorDrawable="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextTextMobileWorkerReg1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/contact"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/c1"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/mobile"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailWorkerReg1" />
+
+            <EditText
+                android:id="@+id/editTextTextPasswordWorkerReg1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/padlock"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/c1"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/password"
+                android:inputType="text|textPassword"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextMobileWorkerReg1" />
+
+
+            <EditText
+                android:id="@+id/editTextTextWorkerRegConfPassword1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/auction"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/c1"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/conPassword"
+                android:inputType="text|textPassword"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPasswordWorkerReg1" />
+
+            <EditText
+                android:id="@+id/editTextTextWorkerRegFname1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/id_card"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/c1"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/fName"
+                android:inputType="text|textCapSentences"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextWorkerRegConfPassword1" />
+
+
+            <EditText
+                android:id="@+id/editTextTextWorkerRegLname1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/id_card"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/c1"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/lName"
+                android:inputType="text|textCapSentences"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextWorkerRegFname1" />
+
+            <Spinner
+                android:id="@+id/spinnerWorkerReg1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/c1"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextWorkerRegLname1"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextWorkerRegLname1"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextWorkerRegLname1" />
+
+            <EditText
+                android:id="@+id/editTextTextWorkerAbout1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/id_card"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/c1"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/workerRegNote3"
+                android:inputType="text|textCapSentences|textMultiLine"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerWorkerReg1" />
+
+            <EditText
+                android:id="@+id/editTextTextWorkerPrice1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/c1"
+                android:drawableStart="@drawable/price_tag"
+                android:drawablePadding="12dp"
+                android:drawableTint="@color/c1"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/open_sans_condensed_regular"
+                android:hint="@string/workerRegNote4"
+                android:inputType="number|numberDecimal"
+                android:paddingStart="12dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextWorkerAbout1" />
+
+            <Button
+                android:id="@+id/buttonWorkerSignUp1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="@color/c1"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/signup"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextWorkerPrice1" />
+
+            <Button
+                android:id="@+id/buttonWorkerSigUp2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/c4"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/signIn_t1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/buttonWorkerSignUp1"
+                app:layout_constraintStart_toStartOf="@+id/buttonWorkerSignUp1"
+                app:layout_constraintTop_toBottomOf="@+id/buttonWorkerSignUp1" />
+
+            <TextView
+                android:id="@+id/textViewWorkerReg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="Custommer Registation ?"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonWorkerSigUp2" />
+
+            <TextView
+                android:id="@+id/textViewWorkerReg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:autoLink="all"
+                android:fontFamily="@font/barlow_condensed_black"
+                android:text="@string/workerRegNote2"
+                android:textColor="@color/c3"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewWorkerReg1"
+                app:layout_constraintStart_toEndOf="@+id/textViewWorkerReg1"
+                app:layout_constraintTop_toTopOf="@+id/textViewWorkerReg1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

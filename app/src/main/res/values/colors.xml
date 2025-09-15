@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="hintColor">#74C595</color>
+    <color name="c1">#1DBF73</color>
+    <color name="c2">#A8E6C6</color>
+    <color name="c3">#046F39</color>
+    <color name="c4">#f67d50</color>
+    <color name="c5">#2238FF</color>
+    <color name="dark">#272827</color>
+    <color name="red">#E91E63</color>
+    <color name="toastColor">#575757</color>
+
+</resources>

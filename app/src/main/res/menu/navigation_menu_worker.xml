@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:checkableBehavior="single">
+
+    <item
+        android:title="@string/workerHomeMenuT1"
+        android:icon="@drawable/home"
+        android:id="@+id/nav_menu_worker_home"/>
+
+    <item
+        android:title="@string/workerHomeMenuT2"
+        android:icon="@drawable/booking"
+        android:id="@+id/nav_menu_worker_booking"/>
+    <item
+        android:title="@string/workerHomeMenuT3"
+        android:icon="@drawable/location"
+        android:id="@+id/nav_menu_worker_location"/>
+
+    <item
+        android:title="@string/workerHomeMenuT4"
+        android:icon="@drawable/user"
+        android:id="@+id/nav_menu_worker_profile"/>
+
+    <item
+        android:title="@string/workerHomeMenuT5"
+        android:icon="@drawable/bag"
+        android:id="@+id/nav_menu_worker_proof"/>
+
+    <item
+        android:title="@string/workerPayHistoryt1"
+        android:icon="@drawable/transaction_history"
+        android:id="@+id/nav_menu_worker_payment_history"/>
+
+    <item
+        android:title="@string/workerHomeMenuT6"
+        android:icon="@drawable/home_address"
+        android:id="@+id/nav_menu_worker_home_address"/>
+    <item
+        android:title="@string/logout"
+        android:icon="@drawable/logout"
+        android:id="@+id/nav_menu_worker_log_out"/>
+
+</group>
+</menu>

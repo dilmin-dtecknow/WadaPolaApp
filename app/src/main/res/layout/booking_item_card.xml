@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_text_layout">
+
+    <FrameLayout
+        android:id="@+id/imageViewBookingItem1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/round_background_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeImageSellerItemBookingItem1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_splash"
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textViewSellerName1BookingItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/barlow_condensed_black"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBookingItem1"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBookingItem1" />
+
+    <TextView
+        android:id="@+id/textViewSellerType1BookingItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBookingItem1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSellerName1BookingItem" />
+
+    <TextView
+        android:id="@+id/textViewSellerRate1BookingItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBookingItem1"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBookingItem1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSellerType1BookingItem" />
+
+    <View
+        android:id="@+id/dividerBookingItem1"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/c1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBookingItem1" />
+
+    <TextView
+        android:id="@+id/textViewBookingItemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Western Province"
+        android:textColor="@color/hintColor"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/dividerBookingItem1"
+        app:layout_constraintTop_toTopOf="@+id/textViewSellerRate1BookingItem" />
+
+    <TextView
+        android:id="@+id/textViewBookingItemStatus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/c4"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBookingItemDate"
+        app:layout_constraintTop_toTopOf="@+id/textViewSellerType1BookingItem" />
+
+    <ImageView
+        android:id="@+id/imageViewLocation1BookingItem"
+        android:layout_width="32sp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dividerBookingItem1"
+        app:layout_constraintTop_toBottomOf="@+id/dividerBookingItem1"
+        app:srcCompat="@drawable/location_marker" />
+    <ImageView
+        android:id="@+id/imageViewMessage1BookingItem"
+        android:layout_width="32sp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewLocation1BookingItem"
+        app:layout_constraintTop_toBottomOf="@+id/dividerBookingItem1"
+        app:srcCompat="@drawable/message_letter" />
+
+    <ImageView
+        android:id="@+id/imageViewPhhone1BookingItem"
+        android:layout_width="32sp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewMessage1BookingItem"
+        app:layout_constraintTop_toBottomOf="@+id/dividerBookingItem1"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/phone" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/c4"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/bookingbtncancel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPhhone1BookingItem"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPhhone1BookingItem"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPhhone1BookingItem" />
+
+    <Button
+        android:id="@+id/buttonAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/c1"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/bookingbtnAccept"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCancel"
+        app:layout_constraintStart_toStartOf="@+id/dividerBookingItem1"
+        app:layout_constraintTop_toTopOf="@+id/buttonCancel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

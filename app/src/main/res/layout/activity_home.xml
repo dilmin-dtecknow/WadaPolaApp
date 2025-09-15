@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayoutCus1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+<!--    Content-->
+<LinearLayout
+    android:id="@+id/linearLayoutNavCus1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarNavCus1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/theam_color"
+        app:navigationIcon="@drawable/navigation"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutNavCus1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container_view_nav_cus1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
+<!--    Content-->
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationViewCus1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu_cus"
+        app:headerLayout="@layout/nav_header_cus"/>
+</androidx.drawerlayout.widget.DrawerLayout>

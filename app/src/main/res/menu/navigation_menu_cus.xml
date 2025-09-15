@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu_cus_home"
+            android:title="@string/home"
+            android:icon="@drawable/home"/>
+        <item
+            android:id="@+id/nav_menu_cus_dashboard"
+            android:title="@string/dash"
+            android:icon="@drawable/dashboard"/>
+
+        <item
+            android:id="@+id/nav_menu_cus_booking"
+            android:title="@string/book"
+            android:icon="@drawable/booking"/>
+
+        <item
+            android:id="@+id/nav_menu_cus_location"
+            android:title="My Location"
+            android:icon="@drawable/location"
+            />
+        <item
+            android:id="@+id/nav_menu_cus_payment_history"
+            android:title="@string/navT5"
+            android:icon="@drawable/transaction_history"
+            />
+        <item
+            android:id="@+id/nav_menu_cus_contact"
+            android:title="@string/con"
+            android:icon="@drawable/contact_book"
+            />
+        <item
+            android:id="@+id/nav_menu_cus_log_out"
+            android:title="@string/logout"
+            android:icon="@drawable/logout"
+            />
+
+    </group>
+
+
+</menu>

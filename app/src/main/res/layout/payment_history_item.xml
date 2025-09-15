@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/imageViewPayHistory1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_background_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/shapeImageSellerItemPayHistory"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_splash"
+            app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textViewSellerName1PayHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/barlow_condensed_black"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPayHistory1"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPayHistory1" />
+
+    <TextView
+        android:id="@+id/textViewWorkHourPayHistory1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPayHistory1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSellerName1PayHistory" />
+
+    <TextView
+        android:id="@+id/textViewPaidStatus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/c4"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPaidDate"
+        app:layout_constraintTop_toTopOf="@+id/textViewWorkHourPayHistory1" />
+
+    <TextView
+        android:id="@+id/textViewPaidDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Western Province"
+        android:textColor="@color/hintColor"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/dividerPayHistory1"
+        app:layout_constraintTop_toTopOf="@+id/textViewTotalPrice" />
+
+    <TextView
+        android:id="@+id/textViewTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPayHistory1"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPayHistory1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWorkHourPayHistory1" />
+
+    <View
+        android:id="@+id/dividerPayHistory1"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/c1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPayHistory1" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:numStars="5"
+        android:progressBackgroundTint="@color/toastColor"
+        android:progressTint="@color/c1"
+        android:rating="0"
+        android:secondaryProgressTint="@color/c1"
+        android:stepSize="1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerPayHistory1" />
+
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/c1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBar"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSave"
+        app:layout_constraintStart_toEndOf="@+id/ratingBar"
+        app:layout_constraintTop_toTopOf="@+id/ratingBar" />
+
+    <ImageView
+        android:id="@+id/imageViewSave"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewRating"
+        app:srcCompat="@drawable/save" />
+</androidx.constraintlayout.widget.ConstraintLayout>

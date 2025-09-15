@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/white" />
+
+    <!-- Focused state -->
+    <item android:drawable="@color/c4" android:state_focused="true" />
+
+<corners android:radius="65dp"/>
+
+</shape>

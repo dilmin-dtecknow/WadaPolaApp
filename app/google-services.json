@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "959749075762",
+    "project_id": "wada-pola-app",
+    "storage_bucket": "wada-pola-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959749075762:android:524ad0576090230a93dd2b",
+        "android_client_info": {
+          "package_name": "lk.javainstitute.wadapola"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuAhSPKZVYJLPaRWfLpeqSJFrCvvGUPwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".customer.SignUp2Activity">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/signup2"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/barlow_condensed_black"
+        android:text="@string/name"
+        android:textColor="@color/c1"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/c1"
+        app:counterOverflowTextColor="@color/c4"
+        app:counterTextColor="@color/c4"
+        app:hintTextColor="@color/c4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:placeholderTextColor="@color/c4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextStreet1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autoText="true"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="12dp"
+            android:hint="@string/street"
+            android:inputType="text|textPostalAddress"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutL1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/c1"
+        app:counterOverflowTextColor="@color/c4"
+        app:counterTextColor="@color/c4"
+        app:hintTextColor="@color/c4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:placeholderTextColor="@color/c4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextLine1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autoText="true"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="12dp"
+            android:hint="@string/l1"
+            android:inputType="text|textPostalAddress|textCapSentences"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutL2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/c1"
+        app:counterOverflowTextColor="@color/c4"
+        app:counterTextColor="@color/c4"
+        app:hintTextColor="@color/c4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutL1"
+        app:placeholderTextColor="@color/c4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autoText="true"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="12dp"
+            android:hint="@string/l2"
+            android:inputType="text|textPostalAddress|textCapSentences|textMultiLine"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutc1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/c1"
+        app:counterOverflowTextColor="@color/c4"
+        app:counterTextColor="@color/c4"
+        app:hintTextColor="@color/c4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutL2"
+        app:placeholderTextColor="@color/c4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCity1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autoText="true"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="12dp"
+            android:hint="@string/city"
+            android:inputType="text|textPostalAddress|textCapSentences"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinnerProvince1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/c1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutc1" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutZ1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/c1"
+        app:counterOverflowTextColor="@color/c4"
+        app:counterTextColor="@color/c4"
+        app:hintTextColor="@color/c4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProvince1"
+        app:placeholderTextColor="@color/c4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextZipCode1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:autoText="true"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="12dp"
+            android:hint="@string/zip"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/c1"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/signup"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayoutZ1"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayoutZ1"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutZ1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
